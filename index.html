@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LINUX SHELLY</title>
+    <link rel="stylesheet" href="res/style/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="onload()">
+<div id="menu" class="noselect">
+    <div id="menu-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/>
+        </svg>
+    </div>
+    <div id="menu-container">
+        <a href="#home"><b>Domů</b></a><br>
+        <a href="#bash">Bash Shell</a><br>
+        <a href="#tcsh">Tcsh/Csh Shell</a><br>
+        <a href="#ksh">Ksh Shell</a><br>
+        <a href="#zsh">Zsh Shell</a><br>
+        <a href="#fish">Fish</a><br>
+        <a href="#quiz">Quiz</a>
+    </div>
+</div>
+<div id="container">
+    <div id="sections">
+        <section id="home">
+            <h1>
+                <span>Nejčastější</span> a <span>Nejvyužívanější</span><br> Linux Shelly
+            </h1>
+            <div class="window center-element" id="cmd1">
+            </div>
+            <div class="breaker"></div>
+            <h2>
+                Co to takový Shell vlastně je?
+            </h2>
+            <div class="p">
+                Linux Shell je tradiční textové rozhrání, které má zjednodušit práci se soubory a programami v počítači. V
+                podstatě se jedná o programovací jazyk na <b>Operačním Systému</b>, který umí řídit systém. V našem případě
+                na UNIX systému <b>Linux</b>.<br>
+                <br>
+                Mi si dneska probereme jen ty nejpodstatnější a nejvyužívanější, se kterými se můžeme setkat i v praxi.<br>
+                <ul>
+                    <li>Bash Shell</li>
+                    <li>Tcsh/Csh Shell</li>
+                    <li>Ksh Shell</li>
+                    <li>Zsh Shell</li>
+                    <li>Fish</li>
+                </ul>
+                <div>https://www.tecmint.com</div>
+            </div>
+            <p>
+            </p>
+        </section>
+        <div class="breaker"></div>
+        <section id="bash">
+            <h2>>Bash Shell</h2>
+            <div>
+                <div class="p">
+                    <b>Nejrozšířenější</b> a <b>nejpoužívanější</b>. Bash shell (ve zkratce <i>Bourne Again Shell</i>) je už
+                    dneska základem každého UNIX systému. Společně s <b>nekonečnou databází příkazů</b> je Bash <b>Sh-kompatibilní</b>
+                    a tím nám ulehčuje práce v samotném Shellu.
+                </div>
+                <div class="breaker"></div>
+                <div class="window">
+                    <b>NAME</b><br>
+                    &emsp;bash - GNU Bourne-Again SHell<br>
+                    <b>SYNOPSIS</b><br>
+                    &emsp;<b>bash</b> [options] [command_string | file]<br>
+                    <br>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <div class="breaker"></div>
+        <section id="tcsh">
+            <h2>>Tcsh/Csh Shell</h2>
+            <div class="p">
+                Méně známější Tcsh (nebo i <i>Csh</i>) shell je jeden z nástupců Bash Shellu. Jeho hlávní výhodou je <b>syntaxe
+                podobná C</b> a interakce <b>oprav chyb</b> v řádku. Bohužel na druhou stranu Tcsh <b>neobsahuje nekonečnou
+                historii příkazů</b> a <b>nekonečné pole</b>.
+            </div>
+            <div class="breaker"></div>
+            <div class="window">
+                <b>NAME</b><br>
+                &emsp;tcsh - C shell with file name completion<br>
+                <b>SYNOPSIS</b><br>
+                &emsp;<b>tcsh</b> [-bcdefFimnqstvVxX] [-Dname[=value]] [arg ...]<br>
+                <br>
+                <span></span>
+            </div>
+        </section>
+        <div class="breaker"></div>
+        <section id="ksh">
+            <h2>>Ksh Shell</h2>
+            <div class="p">
+                Ksh (<i>Korn Shell</i>) byl vytvořen a navržen jedním člověkem, <b>David G. Kornem</b>. Jedná se o <b>nejvýkonnější</b>
+                programovací jazyk. Je to jeden z pokročilejších Shellů, který je <b>všestranný</b>, to znamená že je
+                kompatibilní i s ostatními příkazovými jazyky.
+            </div>
+            <div class="breaker"></div>
+            <div class="window">
+                <b>NAME</b><br>
+                &emsp;ksh, ksh93 - KornShell, a command programming language<br>
+                <b>SYNOPSIS</b><br>
+                &emsp;<b>ksh</b> [ <b>±abcdefhiknboprstuvxBCDP</b> ] [ <b>-R</b> file ] [ <b>±o</b> option ] ...<br>
+                &emsp;<b>rksh</b> [ <b>±abcdefhiknboprstuvxBCDP</b> ] [ <b>-R</b> file ] [ <b>±o</b> option ] ...<br>
+                <br>
+                <span></span>
+            </div>
+        </section>
+        <div class="breaker"></div>
+        <section id="zsh">
+            <h2>>Zsh Shell</h2>
+            <div class="p">
+                Shell Zsh byl navržen, aby byl interaktivní a <b>podporoval schopnosti ostatních Linux Shellů</b>. Dále Zsh
+                podporuje <b>Zapínání programů při zapnutí PC</b>, <b>Sledování přihlašování</b>, ... Podpora při vytváření
+                serverů.
+            </div>
+            <div class="breaker"></div>
+            <div class="window">
+                <b>NAME</b><br>
+                &emsp;zsh - the Z shell<br>
+                <b>OVERVIEW</b><br>
+                &emsp;Because zsh contains many features, the zsh manual has been slip into a number of sections:<br>
+                <br>
+                &emsp;<u>zsh</u> - Zsh overview (this section)<br>
+                &emsp;<u>zshroadmap</u> - Informal introduction to the manual<br>
+                &emsp;<u>zshmisc</u> - Anything not fitting into the other sections<br>
+                &emsp;...<br>
+                <br>
+                <span></span>
+            </div>
+        </section>
+        <div class="breaker"></div>
+        <section id="fish">
+            <h2>>Fish</h2>
+            <div class="p">
+                Fish, nebo-li "<b>friendly interactive shell</b>" byl vytvořen v <b>roce 2005</b>. Jeho cíl byl o <b>nejjednodušší</b>
+                Shell na <b>UNIX systému</b>. Jeho jednoduchost nám <b>navrhuje</b> a <b>doplňuje</b> za nás psané příkazy v
+                řádku a tím ulehčuje práci. Dále <b>podporuje "term256" (barevné spektrum)</b> a využívá se hlavně při <b>Web hostingu</b>.
+            </div>
+            <div class="breaker"></div>
+            <div class="window">
+                <b>NAME</b><br>
+                &emsp;fish - fish - the friendly interactive shell<br>
+                <b>fish - the friendly interactive shell</b><br>
+                &emsp;<b>SYNOPSIS</b><br>
+                &emsp;&emsp;fish [-h] [-v] [-c command] [FILE [ARGUMENTS...]]<br>
+                <br>
+                <span></span>
+            </div>
+        </section>
+        <div class="breaker"></div>
+    </div>
+    <section id="quiz">
+        <h1>Quiz</h1>
+        <div id="hide-sections" class="noselect">klikni pro schování/zobrazení textů</div>
+        <div class="quiz noselect">
+            <div class="quiz-answers">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+                <span id="quizRightAnswers">0</span>
+            </div>
+            <div class="quiz-answers">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+                <span id="quizWrongAnswers">0</span>
+            </div>
+            <div class="quiz-win" id="quizWin">
+                <div class="center-center">
+                    Sláva, zodpověděl jsi všechny otázky<br>
+                    <div class="quiz-again" id="quizAgain">Opakovat</div>
+
+                </div>
+            </div>
+            <div class="center-center quiz-center">
+                <div class="quiz-question">
+                    <b id="quizQuestion">Error: Question didn't load Correctly</b><br>
+                    <br>
+                    A. <span id="quizAnswerA">Error</span><br>
+                    B. <span id="quizAnswerB">Error</span><br>
+                    C. <span id="quizAnswerC">Error</span><br>
+                    D. <span id="quizAnswerD">Error</span><br>
+                </div>
+                <div class="quiz-button" id="quizButton1">A</div>
+                <div class="quiz-button" id="quizButton2">B</div>
+                <div class="quiz-button" id="quizButton3">C</div>
+                <div class="quiz-button" id="quizButton4">D</div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="res/script/main.js"></script>
+<script src="res/script/quiz.js"></script>
+</body>
+</html>

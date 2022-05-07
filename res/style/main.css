@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    color: black;
+    background: #00fff1;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    background: rgb(41,16,113);
+    background: -moz-linear-gradient(30deg, rgba(41,16,113,1) 0%, rgba(104,62,157,1) 100%);
+    background: -webkit-linear-gradient(30deg, rgba(41,16,113,1) 0%, rgba(104,62,157,1) 100%);
+    background: linear-gradient(30deg, rgba(41,16,113,1) 0%, rgba(104,62,157,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#291071",endColorstr="#683e9d",GradientType=1);
+}
+
+h1 {
+    font-size: 78px;
+    color: white;
+}
+
+h1 > span {
+    color: #00fff1;
+}
+
+h2 {
+    font-size: 42px;
+    color: #00fff1;
+}
+
+.p {
+    color: white;
+    background: rgba(0,0,0,.15);
+    border-radius: 7px;
+    padding: 10px 15px;
+}
+
+.p > div {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.p > div::before {
+    content: 'Zdroj: ';
+    font-weight: 600;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+#container {
+    width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center-element {
+    margin: 0 auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.breaker {
+    height: 40px;
+}
+
+.noselect, br, .window {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#menu {
+    position: fixed;
+    margin: 20px;
+    z-index: 9;
+}
+
+#menu-button {
+    width: 50px;
+    height: 50px;
+}
+
+#menu-container {
+    width: 200px;
+    display: none;
+    opacity: 0;
+}
+
+#menu-button, #menu-container {
+    background: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-shadow: 0 10px 50px rgba(0,0,0,.4);
+    transition: .2s;
+    overflow: hidden;
+}
+
+#menu-button:hover {
+    padding: 10px 12px;
+}
+
+#menu-button:active {
+    transform: scale(1.1);
+}
+
+#menu-container > a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-weight: 500;
+    transition: .2s;
+}
+
+#menu-container > a:hover {
+    margin-left: 5px;
+}
+
+#menu-container > a:hover::before {
+    content: '>';
+}
+
+#quiz > h1 {
+    margin-bottom: 0;
+}
+
+#hide-sections {
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.quiz {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background: rgba(0,0,0,.3);
+    border-radius: 15px;
+    color: white;
+    padding: 0;
+}
+
+.quiz-button {
+    width: calc(50% - 10px);
+    float: left;
+    text-align: center;
+    padding: 10px;
+    background: white;
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.quiz-answers {
+    z-index: 3;
+    position: absolute;
+    margin: 20px 25px;
+}
+
+.quiz-answers > svg {
+    height: 24px;
+    position: relative;
+    top: 6px;
+    margin-right: 5px;
+}
+.quiz-answers:nth-child(1) {
+    bottom: 0;
+    left: 0;
+    fill: #00fff1;
+}
+
+
+.quiz-answers:nth-child(2) {
+    right: 0;
+    bottom: 0;
+    fill: #FF000E;
+}
+
+.quiz-button:hover, .quiz-again:hover {
+    transform: scale(.95);
+}
+
+.quiz-button:active, .quiz-again:active {
+    transform: scale(1.05);
+}
+
+.quiz-question {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quiz-center {
+    width: 100%;
+    padding: 100px;
+    z-index: 1;
+}
+
+.quiz-win {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    border-radius: 12px;
+    background: rgba(0,0,0,.5);
+    backdrop-filter: blur(2px);
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    display: none;
+    opacity: 0;
+    transition: .2s;
+}
+
+.quiz-again {
+    padding: 5px;
+    border-radius: 12px;
+    margin: 10px auto;
+    font-size: 18px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    width: 50%;
+    transition: .2s;
+}
+
+#cmd1 {
+    height: 320px;
+}
+
+.window {
+    font-family: 'Roboto Mono', monospace;
+    border-top: 32px solid transparent;
+    background: rgba(0,0,0,.5);
+    border-radius: 12px;
+    padding: 12px 16px;
+    position: relative;
+    font-size: 18px;
+    color: #f6f0f8;
+    box-shadow: 0 10px 50px rgba(0,0,0,.4);
+    pointer-events: none;
+}
+
+.window > b {
+    color: #00fff1;
+}
+
+.window > span::before {
+    content: 'root@linux:';
+    color: #00fff1;
+}
+
+.window::before {
+    position: absolute;
+    top: -15px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #f6f0f8;
+    border-radius: 50%;
+    box-shadow: 20px 0 #f6f0f8, 40px 0 #f6f0f8;
+    opacity: .8;
+}
+
+.window::after {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 24px;
+    background: #00fff1;
+    animation: blink ease-in-out 1.2s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 8vw;
+    }
+
+    .p {
+        font-size: 4vw;
+    }
+
+    .breaker {
+        height: 1vh;
+    }
+
+    .window {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .window::after {
+        width: 10px;
+        height: 20px;
+    }
+
+    .quiz-center {
+        padding: 20px;
+    }
+
+    #menu {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    #menu-button, #menu-container {
+        margin-bottom: 0;
+        margin-top: 10px;
+
+    }
+
+    #menu-container {
+        width: auto;
+    }
+
+    #menu-container > a {
+        font-size: 4vw;
+    }
+}
