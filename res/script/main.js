@@ -17,7 +17,7 @@ async function cmd1type () {
         cmd1.innerHTML += "<br>" +
             "124&nbsp;&#09;website/index.html<br>" +
             "547&nbsp;&#09;website/res/assets/..<br>" +
-            "642&nbsp;&#09;website/res/script/main.js<br>" +
+            "642&nbsp;&#09;website/res/script/..<br>" +
             "789&nbsp;&#09;website/res/style/main.css<br>" +
             "<span></span>";
         await typeToCmd("date", cmd1);
